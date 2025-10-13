@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Spice&family=Cal+Sans&family=Caprasimo&family=Coiny&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fascinate&family=Fascinate+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Spice&family=Cal+Sans&family=Caprasimo&family=Coiny&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Fascinate&family=Fascinate+Inline&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+section {
+  border: 2px solid black;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70ch;
+  margin: 1.5rem auto;
+}
+
+section:last-of-type {
+  margin-bottom: 4rem;
+}
+
+section:nth-of-type(1) {
+    margin-top: 1em;
+}
+
+section:nth-of-type(even):hover{
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #FBD029;
+  cursor: pointer;
+}
+section:nth-of-type(odd):hover{
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #2472B2;
+  cursor: pointer;
+}
+section:nth-of-type(odd):active{
+  transform: translateY(5px);
+  background-color: #fbd1296d;
+  cursor: pointer;
+}
+section:nth-of-type(even):active{
+  transform: translateY(5px);
+  background-color: #2472b289;
+  cursor: pointer;
+}
+p{
+  margin-top: 1.5em;
+  font-family: "Gelasio";
+  font-size:1.1em;
+  text-align: center;
+}
+
+
+h2{
+  font-family: "Coiny";
+  font-size: 2em;
+}
+
+#more{
+  text-decoration: underline solid #000;
+}
+
+/* typewriter effect */
+.typewriter:hover{
+  overflow: hidden;
+  display: inline-block;
+}
+/* typewriter effect */
+.blink:hover {
+  animation: blink 0.7s infinite;
+}
+/* typewriter effect */
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: black; }
+  100% { border-color: transparent; }
+}
+
+/* reveal section */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+/* reveal section */
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

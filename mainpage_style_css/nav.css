@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Spice&family=Cal+Sans&family=Caprasimo&family=Coiny&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fascinate&family=Fascinate+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    background-color: #1a1f2b68;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 3em;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-family: "Coiny";
+    transform: scale(1.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, font-size 0.1s ease;
+}
+
+nav li:nth-child(even) a:hover {
+    background-color: #FBD029;
+    color: #2472B2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1) translateY(-3px);
+    font-weight: bold;
+}
+
+nav li:nth-child(odd) a:hover {
+    background-color: #2472B2;
+    color: #FBD029;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1) translateY(-3px);
+    font-weight: bold;
+}
+
+nav a:active {
+    font-size: 1em;
+}
+
+nav.scrolled {
+    background-color: rgba(26, 31, 43, 0.7);
+    backdrop-filter: blur(6px);
+    padding: 0.5em 0;
+}
+
+nav.scrolled a {
+    font-size: 0.95rem;
+}

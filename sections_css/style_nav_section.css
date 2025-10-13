@@ -1,0 +1,54 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em;
+    background-color: #1a1f2b68;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    gap: 3em;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-family: "Coiny";
+    transform: scale(1.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, font-size 0.1s ease;;
+}
+
+nav li:nth-child(odd) a:hover {
+    background-color: #2472B2;
+    color: #FBD029;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1) translateY(-3px);
+    font-weight: bold;
+}
+
+nav a:active {
+    font-size: 1em;
+}
+
+nav.scrolled {
+    background-color: rgba(26, 31, 43, 0.7);
+    backdrop-filter: blur(6px);
+    padding: 0.5em 0;
+}
+
+nav.scrolled a {
+    font-size: 0.95rem;
+}
