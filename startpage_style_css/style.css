@@ -95,6 +95,10 @@ div img {
     display: block;
     transform: translateY(-30px);
 }
+.click{
+  justify-content: center;
+  padding-top: 2rem;
+}
 
 
 
