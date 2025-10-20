@@ -90,3 +90,18 @@ h2{
   transform: translateY(0);
 }
 
+.mobile{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .typewriter{
+    display: none;
+  }
+  .mobile{
+    display: block;
+    text-decoration: underline;
+
+  }
+}
+

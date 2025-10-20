@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  nav{
+    display:none
+  }
+
+  h1, h2, h3 {
+    font-size: clamp(24px, 6vw, 36px);
+    text-align: center;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  section, .content, .about, .projects, .certificates, .experience {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
