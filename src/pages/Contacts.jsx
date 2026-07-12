@@ -1,10 +1,15 @@
 import { useState } from 'react'
 import Reveal from '../components/Reveal.jsx'
+<<<<<<< HEAD
 import { social, CV_URL, FORMSPREE_URL } from '../data.js'
+=======
+import { social, CV_URL } from '../data.js'
+>>>>>>> 829f1adfbe1a41e12e1fdcff1b78bb3fc59348b0
 
 export default function Contacts() {
   const [errors, setErrors] = useState({})
   const [sent, setSent] = useState(false)
+<<<<<<< HEAD
   const [sending, setSending] = useState(false)
   const [sendError, setSendError] = useState('')
   const [copied, setCopied] = useState(false)
@@ -13,6 +18,13 @@ export default function Contacts() {
     e.preventDefault()
     const form = e.target
     const fd = new FormData(form)
+=======
+  const [copied, setCopied] = useState(false)
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+    const fd = new FormData(e.target)
+>>>>>>> 829f1adfbe1a41e12e1fdcff1b78bb3fc59348b0
     const name = (fd.get('name') || '').trim()
     const email = (fd.get('email') || '').trim()
     const msg = (fd.get('msg') || '').trim()
@@ -22,6 +34,7 @@ export default function Contacts() {
     if (msg.length < 4) errs.msg = 'Please write a short message'
     setErrors(errs)
     if (Object.keys(errs).length) return
+<<<<<<< HEAD
 
     setSending(true)
     setSendError('')
@@ -41,6 +54,9 @@ export default function Contacts() {
     } finally {
       setSending(false)
     }
+=======
+    setSent(true)
+>>>>>>> 829f1adfbe1a41e12e1fdcff1b78bb3fc59348b0
   }
 
   const copy = () => {
@@ -60,8 +76,13 @@ export default function Contacts() {
           <div className="cwrap">
             {sent ? (
               <div className="cform card">
+<<<<<<< HEAD
                 <div className="form-ok"><div className="ico">✅</div><h3>Message sent!</h3>
                   <p>Thanks for reaching out — I'll get back to you soon.</p></div>
+=======
+                <div className="form-ok"><div className="ico">✅</div><h3>Message ready!</h3>
+                  <p>Thanks{`, `}I'll get back to you soon. (Connect this form to Formspree to receive it in your inbox.)</p></div>
+>>>>>>> 829f1adfbe1a41e12e1fdcff1b78bb3fc59348b0
               </div>
             ) : (
               <form className="cform card" onSubmit={onSubmit} noValidate>
@@ -77,8 +98,12 @@ export default function Contacts() {
                   <label>Message</label><textarea name="msg" placeholder="Hi Simeon, I'd love to talk about..." />
                   {errors.msg && <div className="err-msg">{errors.msg}</div>}
                 </div>
+<<<<<<< HEAD
                 {sendError && <div className="err-msg" style={{ marginBottom: '12px' }}>{sendError}</div>}
                 <button type="submit" className="submit" disabled={sending}>{sending ? 'Sending…' : 'Send message →'}</button>
+=======
+                <button type="submit" className="submit">Send message →</button>
+>>>>>>> 829f1adfbe1a41e12e1fdcff1b78bb3fc59348b0
               </form>
             )}
 

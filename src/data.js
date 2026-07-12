@@ -20,8 +20,11 @@ export const social = {
   github: 'https://github.com/simeon011',
 }
 
+<<<<<<< HEAD
 export const FORMSPREE_URL = 'https://formspree.io/f/xkodwldg'
 
+=======
+>>>>>>> 829f1adfbe1a41e12e1fdcff1b78bb3fc59348b0
 export const heroCode = [
   ['<span class="dec">@dataclass</span>', 0],
   ['<span class="kw">class</span> <span class="cls">Developer</span><span class="pn">:</span>', 0],
